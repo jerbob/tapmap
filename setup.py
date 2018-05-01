@@ -10,7 +10,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as file:
     long_description = file.read()
 
 setup(
-    name='TapMap',
+    name='tapmap',
     version='1.0',
     description='A generator for keyboard heatmap images',
     long_description=long_description,
