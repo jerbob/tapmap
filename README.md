@@ -4,7 +4,7 @@ Generate high-quality, customizable keyboard heatmaps with a single command.
 - - - - 
 
 # Installation: #
-Use `python setup.py install` to install the package.
+Use `pip install tapmap` to install the package.
 
 # Usage: #
 `tapmap --help` will produce the following help message:

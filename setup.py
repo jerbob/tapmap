@@ -11,7 +11,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as file:
 
 setup(
     name='tapmap',
-    version='1.0',
+    version='1.2',
     description='A generator for keyboard heatmap images',
     long_description=long_description,
     long_description_content_type='text/markdown',
