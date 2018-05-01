@@ -1,6 +1,6 @@
-TapMap: Generate high-quality, customizable keyboard heatmaps with a single command.
+TapMap
 ===================
-
+Generate high-quality, customizable keyboard heatmaps with a single command.
 - - - - 
 
 # Installation: #
