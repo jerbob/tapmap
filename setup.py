@@ -21,7 +21,7 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 3'
     ],
-    py_modules=['char_map', 'processing'],
+    py_modules=['tapmap.char_map', 'tapmap.processing'],
     keywords='matplotlib PIL numpy',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     install_requires=['Pillow', 'numpy', 'matplotlib'],
@@ -29,5 +29,6 @@ setup(
         'console_scripts': [
             'tapmap=tapmap:main',
         ],
-    }
+    },
+    include_package_data=True
 )

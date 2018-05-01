@@ -1,2 +1,3 @@
 include *.py
-include images/*.png
+include tapmap/*.py
+include tapmap/images/keyboard.png
