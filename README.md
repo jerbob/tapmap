@@ -25,4 +25,6 @@ optional arguments:
                "viridis")
 ```
 To generate a keyboard heatmap `map.png` from an input file `input.txt`, use: `tapmap input.txt map.png` <br/>
-TapMap also supports all matplotlib colormaps: `tapmap input.txt map.png -c plasma`
+![Default CMap](https://i.imgur.com/VfxQECB.png)
+TapMap also supports all matplotlib colormaps: `tapmap input.txt map.png -c winter`
+![Winter CMap](https://i.imgur.com/PcIljzp.png)
