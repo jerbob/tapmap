@@ -21,6 +21,7 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 3'
     ],
+    py_modules=['char_map', 'processing'],
     keywords='matplotlib PIL numpy',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     install_requires=['Pillow', 'numpy', 'matplotlib'],

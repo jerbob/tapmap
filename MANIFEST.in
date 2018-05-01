@@ -1,2 +1,2 @@
 include *.py
-recursive-include examples *.png *.py
+include images/*.png
