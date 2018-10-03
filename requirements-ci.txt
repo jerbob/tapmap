@@ -1,7 +1,7 @@
 Pillow
 numpy
 matplotlib
-flake8
+flake8==3.5.0
 flake8-bugbear
 flake8-bandit
 flake8-import-order
