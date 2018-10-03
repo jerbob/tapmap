@@ -3,7 +3,7 @@ numpy
 matplotlib
 flake8
 flake8-bugbear
-flake8-bandit
+flake8-bandit==1.0.2
 flake8-import-order
 flake8-tidy-imports
 flake8-todo
