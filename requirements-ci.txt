@@ -1,5 +1,5 @@
 Pillow
-numpy
+numpy==1.15.2
 matplotlib
 flake8
 flake8-bugbear
