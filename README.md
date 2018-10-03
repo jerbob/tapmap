@@ -1,5 +1,8 @@
 TapMap
 ===================
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/43ab4be7f3f541daa98be9a4709efc9a)](https://app.codacy.com/app/AnonGuy/TapMap?utm_source=github.com&utm_medium=referral&utm_content=AnonGuy/TapMap&utm_campaign=Badge_Grade_Dashboard)
+
 Generate high-quality, customizable keyboard heatmaps with a single command.
 - - - - 
 
