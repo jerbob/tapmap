@@ -2,7 +2,7 @@ Pillow
 numpy
 matplotlib
 flake8
-flake8-bugbear
+flake8-bugbear==18.8.0
 flake8-bandit
 flake8-import-order
 flake8-tidy-imports
