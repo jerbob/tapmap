@@ -1,6 +1,6 @@
 Pillow
 numpy
-matplotlib
+matplotlib==3.0.0
 flake8==3.5.0
 flake8-bugbear==18.8.0
 flake8-bandit==1.0.2
