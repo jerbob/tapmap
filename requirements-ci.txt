@@ -9,4 +9,4 @@ flake8-tidy-imports
 flake8-todo
 flake8-string-format
 safety
-dodgy
+dodgy==0.1.9
