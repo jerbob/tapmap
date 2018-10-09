@@ -2,7 +2,8 @@
 
 import argparse
 
-from tapmap.processing import get_frequencies, blend_and_save
+from tapmap.processing import blend_and_save, get_frequencies
+
 
 parser = argparse.ArgumentParser(
     description='Generate a keyboard heatmap from a text file.'
@@ -47,7 +48,7 @@ def main():
     blend_and_save(
         heatmap_data, output_file, colormap, dpi
     )
-    print('Image generated: {}'.format(output_file))
+    print('Image generated: {0}'.format(output_file))
 
 
 if __name__ == '__main__':

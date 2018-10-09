@@ -1,12 +1,15 @@
 """Main Image and Data Processing functions."""
 
 import os
-import numpy as np
-import matplotlib.pyplot as plt
 
 from PIL import Image, ImageChops
 
-from tapmap.char_map import get_coords, get_all_pixels
+import matplotlib.pyplot as plt
+
+import numpy as np
+
+from tapmap.char_map import get_all_pixels, get_coords
+
 
 # Get full path of module's directory
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -16,13 +19,13 @@ np.set_printoptions(threshold=np.nan)
 
 # Open the keyboard image for later use
 keyboard = Image.open(
-    '{}/images/keyboard.png'.format(dir_path)
+    '{0}/images/keyboard.png'.format(dir_path)
 )
 
 
 def get_frequencies(filename):
     """Get the frequencies of certain keypresses."""
-    print('Processing file {}...'.format(filename))
+    print('Processing file {0}...'.format(filename))
     pixels = []
     heatmap_data = np.asarray([[0] * 57] * 21)
     # Open the given file and read the contents
@@ -45,7 +48,7 @@ def get_frequencies(filename):
     for pixel in get_all_pixels(((18, 18), (19, 34))):
         x, y = pixel
         heatmap_data[x][y] *= 0.3
-    print('Finished processing file {}.'.format(filename))
+    print('Finished processing file {0}.'.format(filename))
     # Return the final array
     return heatmap_data
 
@@ -64,7 +67,7 @@ def blend_and_save(heatmap_data, filename, colormap, dots):
     )
     # Save the heatmap plot
     plt.savefig(
-        '{}/images/heatmap.png'.format(dir_path),
+        '{0}/images/heatmap.png'.format(dir_path),
         dpi=dots,
         pad_inches=0,
         transparent=True,
@@ -73,12 +76,12 @@ def blend_and_save(heatmap_data, filename, colormap, dots):
     print('Blending and saving image...')
     # Open the heatmap image
     heatmap = Image.open(
-        '{}/images/heatmap.png'.format(dir_path)
+        '{0}/images/heatmap.png'.format(dir_path)
     )
     # Resize the heatmap to the keyboard's size, with antialiasing
     heatmap = heatmap.resize(keyboard.size, Image.ANTIALIAS)
     heatmap.save(
-        '{}/images/heatmap.png'.format(dir_path)
+        '{0}/images/heatmap.png'.format(dir_path)
     )
     # Blend the images, and save
     blended = ImageChops.darker(keyboard, heatmap)
